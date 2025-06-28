@@ -1,0 +1,527 @@
+
+/*heading section*/
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+}
+.searchbar{
+    display: flex;
+    font-family: "Roboto", sans-serif;
+  font-weight: 50;
+  font-style: normal;
+}
+.searchbar i{
+    padding: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+.items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgb(255, 230, 25);
+    color: black;
+    padding: 10px 20px;
+    list-style-type: none;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    padding: 0px;
+}
+.profile li{
+    margin:25px;
+}
+.profile a{
+    color: black;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}   
+.items img{
+    width: 100px;
+    height: 90px;
+    border-radius: 50%;
+}
+.items .search{
+    padding: 20px;
+    width: 700px;
+    border-radius: 5px;
+    border:1px solid white;
+}
+.items .search:focus{
+    outline: none;
+}
+.nav-sub ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    list-style-type: none;
+}
+.search{
+    font-size: 16px;
+}
+
+/*sliding*/
+
+
+.slideshow-container {
+  
+  position: relative;
+  margin: auto;
+}
+
+.mySlides img{
+    height: 550px ;
+    width: 1300px;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+
+/*catagories*/
+.categories{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    margin: 50px 100px 80px 100px;
+}
+
+.categories img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+.categories li{
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+.categories p{
+    margin: 0 50px 0 50px;
+}
+.categories a{
+    color: black;
+    text-decoration: none;
+}
+
+/*card section*/
+
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    margin: 10px 60px 10px 60px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+}
+
+.card {
+    background-color: white;
+    border-radius: 5px;
+    width: 180px;
+    padding: 10px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.card img:hover{
+    transform: scale(1.1);
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+.card-details {
+    margin-top: 10px;
+}
+.card-details button:hover{
+    transform:scale(1.1);
+    transition: 0.8s;
+    cursor: pointer;
+}
+.card-details a{
+    text-decoration: none;
+    color: white;
+    background-color: #f8c020;
+    padding: 5px;
+    border-radius: 5px;
+}
+.card h3 {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.card p {
+    margin: 5px 0;
+    color: #777;
+}
+
+.card .price {
+    font-size: 14px;
+    color: #333;
+    margin: 5px 0;
+}
+
+.card .price span {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.card .discount {
+    color: green;
+    font-weight: bold;
+}
+
+.card button {
+    background-color: #f8c020;
+    color: white;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.card button:hover {
+    background-color: #e6ab00;
+}
+
+.sudha{
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 30px;
+}
+
+.newnote{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 350px 0 350px;
+    list-style-type: none;
+}
+.newnote li{
+    border: #000 solid 1px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+    color: black;
+}
+
+.book{
+    background-color: rgb(50, 202, 206);
+    color: white;
+    text-align: left;
+    height: 350px;
+    width: 360px;
+}
+.book .txt{
+    margin: 50px;
+}
+.book p{
+    padding: 0 0 20px 0;
+}
+.book span{
+    border: #000 solid 1px;
+    color: #000;
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+
+/*contact and about us*/
+.contactabout{
+    display: flex;
+    justify-content: space-around;
+}
+.contactabout img{
+    width: 600px;
+    height: 500px;
+    font-size: 60px;
+}
+.contactabout .ca{
+    align-items: center;
+    margin: 150px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 50px;
+}
+
+.contactabout .ca a{
+    background-color: #f8c020;
+    color: white;
+    font-size: large;
+    padding: 25px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    font-size: 60px;
+    border: none;
+    margin: 0 0 20px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+hr{
+    margin: 0 40px 0 40px;
+}
+/*feature authors*/
+.authors{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    margin: 0 100px 0 100px;
+}
+.authors img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+.authors li{
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+/*footer  */
+.footer {
+    background-color: #ffffff;
+    padding: 40px;
+    border-top: 1px solid #ddd;
+}
+
+.twitter{
+    width: 40px;
+    height: 40px;
+}
+.insta{
+    width: 50px;
+    height: 50px;
+}
+.newsletter-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.newsletter-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.newsletter-section .email{
+    padding: 0 600px 0px 0px;
+    font-size: 16px;
+    width: 300px;
+    margin: 50px;
+}
+.newsletter-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.newsletter-section p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter-form input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    width: 300px;
+}
+
+.newsletter-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+}
+
+.social-media {
+    margin-top: 30px;
+}
+
+.social-media h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    color: grey;
+}
+
+.company-info {
+    width: 30%;
+}
+
+.company-info img {
+    width: 100px;
+    height: 90px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+
+.company-info p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.footer-links {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    color: grey;
+}
+
+.footer-links h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+
+.footer-links ul li a:hover {
+    color: #555;
+}
+.footer{
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+}
+.submit-email:focus{
+    outline: none;
+}
+
+

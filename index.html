@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Website</title>
+    <script src="https://kit.fontawesome.com/7c8a0f1c0b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav-bar">
+        <ul class="items">
+            <li><img src="images/logo1.png" alt="" sizes="" srcset=""></li>
+            <div class="searchbar">
+                <li><input class="search" type="text" placeholder="Search by Title, Author, ISBN"></li>
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+            <div class="profile">
+                <li><a href="login.html">login</a></li>
+                <li><a href="subscription.html">price</a></li>
+                <li><a href="aboutus.html">about us</i></a></li>
+            </div>
+        </ul>
+    </div>
+    <div class="nav-sub">
+        <ul>
+            <li>NEW & NOTEWORTHY</li>
+            <li>TOP 50</li>
+            <li>BOOKSTORE RECOMMENDS</li>
+            <li>BOOKS</li>
+            <li>KIDS BOOKS</li>
+            <li>Young Adult</li>
+            <li>TOYS & GAMES</li>
+            <li>STATIONERY & GIFTS</li>
+            <li>SALE</li>
+        </ul>
+    </div>
+
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 4</div>
+          <img src="images/hungergames.png" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 4</div>
+          <img src="images/harry.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 4</div>
+          <img src="images/m8.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 4</div>
+            <img src="images/game.avif" style="width:100%">
+          </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+          <span class="dot" onclick="currentSlide(4)"></span> 
+        </div>
+
+
+
+        <!--categories-->
+        <h3 class="sudha">Categories</h3>
+        <ul class="categories">
+            <li><img src="images/action.jpg" alt=""><a href="#c1"><p>Action and Adventure</p></a></li>
+            <li><img src="images/child.jpg" alt=""> <a href="#c2"><p>Children and Young Adults</p></a></li>
+            <li><img src="images/cri.jpg" alt=""><a href="#c3"><p>Crime, Thriller and Mystery</p></a></li>
+            <li><img src="images/bio.jpg" alt=""><a href="#c4"><p>Biographies, Diaries and True Accounts</p></a></li>
+            <li><img src="images/com.jpg" alt=""><a href="#c5"><p>Comics and Manga</p></a></li>
+            <li><img src="images/HOR1.png" alt=""><a href="#c6"><p>Fantasy, Horror and Science Fiction</p></a></li>
+        </ul>
+
+
+    
+    <!--Action and adventure-->
+    <h3 class="sudha" id="c1">Action and Adventure</h3>
+    <div class="card-container ">
+        <div class="card">
+            <img src="cards/a1.jpg" alt="Grandma's Bag of Stories">
+            <div class="card-details">
+                <h3>Harry Potter And the Philosophers stone</h3>
+                <p>J.K.Rowling</p>
+                <p class="price">₹ 339 <span>₹ 399</span> <span class="discount">(15% off)</span></p>
+                <button onclick="book1()"  >Read now</button>
+            </div>`
+        </div>
+        <div class="card">
+            <img src="cards/a2.jpg" alt="The Mother I Never Knew">
+            <div class="card-details">
+                <h3>Adventures of TOM SAWYER</h3>
+                <p>Mark Twain</p>
+                <p class="price">₹ 254 <span>₹ 299</span> <span class="discount">(15% off)</span></p>
+                <button onclick="add()">Read now</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="cards/a3.jpg" alt="Something Happened">
+            <div class="card-details">
+                <h3>Amazon Adventure</h3>
+                <p>kamaleswar mukherjee</p>
+                <p class="price">₹ 254 <span>₹ 299</span> <span class="discount">(15% off)</span></p>
+                <button onclick="add()">Read now</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="cards/a4.jpg" alt="The Magic Drum and Other Favourite Stories">
+            <div class="card-details">
+                <h3>Around the world in eighty days</h3>
+                <p>Jules verne</p>
+                <p class="price">₹ 234 <span>₹ 275</span> <span class="discount">(15% off)</span></p>
+                <button onclick="add()">Read now</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="cards/a5.jpg" alt="The Magic of the Lost Temple">
+            <div class="card-details">
+                <h3>Treasure island</h3>
+                <p>robert louis stevenson</p>
+                <p class="price">₹ 234 <span>₹ 275</span> <span class="discount">(15% off)</span></p>
+                <button onclick="add()">Read now</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="cards/a6.jpg" alt="The Bird with Golden Wings">
+            <div class="card-details">
+                <h3>Gullivers travels</h3>
+                <p>jonathan swift</p>
+                <p class="price">₹ 269 <span>₹ 199</span> <span class="discount">(15% off)</span></p>
+                <button onclick="add()">Read now</button>
+            </div>
+        </div>
+    </div>
+
+    <!--children -->
+    <h3 class="sudha" id="c2">Children and Young Adults</h3>
+    <div class="card-container">
+        <div class="card">
+            <img src="cards/c5.jpg" alt="Grandma's Bag of Stories">
+            <div class="card-details">
+                <h3>finding your reason for being</h3>
+                <p>IKIGAI</p>
+                <p class="price">₹ 539 <span>₹ 799</span> <span class="discount">(15% off)</span></p>
+                <button onclick="book2()"  >Read now</button>
+            </div>`
+        </div>
+        <div class="card">
+            <img src="cards/c2.jpg" alt="The Mother I Never Knew">
+            <div class="card-details">
+                <h3>the gopi diaries</h3>
+                <p>sudha murty</p>
+                <p class="price">₹ 174 <span>₹ 199</span> <span class="discount">(15% off)</span></p>
+                <button onclick="add()">Read now</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="cards/c3.jpg" alt="Something Happened">
+            <div class="card-details">
+                <h3>your are simply perfect</h3>
+                <p>sadia saeed</p>
+                <p class="price">₹ 254 <span>₹ 299</span> <span class="discount">(15% off)</span></p>
+                <button onclick="add()">Read now</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="cards/c4.jpg" alt="The Magic Drum and Other Favourite Stories">
+            <div class="card-details">
+                <h3>best book day ever</h3>
+                <p>tom gates</p>
+                <p class="price">₹ 134 <span>₹ 175</span> <span class="discount">(15% off)</span></p>
+                <button onclick="add()">Read now</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="cards/c1.jpg" alt="The Magic of the Lost Temple">
+            <div class="card-details">
+                <h3>the book thief</h3>
+                <p>markuszusak</p>
+                <p class="price">₹ 134 <span>₹ 375</span> <span class="discount">(15% off)</span></p>
+                <button onclick="add()">Read now</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="cards/c6.jpg" alt="The Bird with Golden Wings">
+            <div class="card-details">
+                <h3>Treasure in the multiplication maze</h3>
+                <p>jayagovind</p>
+                <p class="price">₹ 269 <span>₹ 299</span> <span class="discount">(15% off)</span></p>
+                <button onclick="add()">Read now</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+                <!--Crime, Thriller and Mystery-->
+        <h3 class="sudha" id="c3">Crime, Thriller and Mystery</h3>
+        <div class="card-container">
+            <div class="card">
+                <img src="cards/t1.jpg" alt="Grandma's Bag of Stories">
+                <div class="card-details">
+                    <h3>Agatha oddly the secret key</h3>
+                    <p>lena jones</p>
+                    <p class="price">₹ 239 <span>₹ 299</span> <span class="discount">(15% off)</span></p>
+                    <button onclick="book3()"  >Read now</button>
+                </div>`
+            </div>
+            <div class="card">
+                <img src="cards/t2.jpg" alt="The Mother I Never Knew">
+                <div class="card-details">
+                    <h3>a good girls guide to murder</h3>
+                    <p>holly jackson</p>
+                    <p class="price">₹ 354 <span>₹ 499</span> <span class="discount">(15% off)</span></p>
+                    <button onclick="add()">Read now</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="cards/t3.jpg" alt="Something Happened">
+                <div class="card-details">
+                    <h3>The time machine</h3>
+                    <p>h.g.wells</p>
+                    <p class="price">₹ 254 <span>₹ 299</span> <span class="discount">(15% off)</span></p>
+                    <button onclick="add()">Read now</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="cards/t4.jpg" alt="The Magic Drum and Other Favourite Stories">
+                <div class="card-details">
+                    <h3>356 unsolved mysteries</h3>
+                    <p>tom gates</p>
+                    <p class="price">₹ 234 <span>₹ 275</span> <span class="discount">(15% off)</span></p>
+                    <button onclick="add()">Read now</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="cards/t5.jpg" alt="The Magic of the Lost Temple">
+                <div class="card-details">
+                    <h3>one of us is lying</h3>
+                    <p>karen m.mcmanus</p>
+                    <p class="price">₹ 134 <span>₹ 275</span> <span class="discount">(15% off)</span></p>
+                    <button onclick="add()">Read now</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="cards/t6.jpg" alt="The Bird with Golden Wings">
+                <div class="card-details">
+                    <h3>fairy tales</h3>
+                    <p>grimms</p>
+                    <p class="price">₹ 269 <span>₹ 399</span> <span class="discount">(15% off)</span></p>
+                    <button onclick="add()">Read now</button>
+                </div>
+            </div>
+        </div>
+    
+
+
+        <!--Biographies, Diaries and True Accounts-->
+        <h3 class="sudha" id="c4">Biographies, Diaries and True Accounts</h3>
+        <div class="card-container">
+            <div class="card">
+                <img src="cards/d1.jpg" alt="Grandma's Bag of Stories">
+                <div class="card-details">
+                    <h3>the man who knew infinity</h3>
+                    <p>robert kanigel</p>
+                    <p class="price">₹ 439 <span>₹ 599</span> <span class="discount">(15% off)</span></p>
+                    <button onclick="book4()"  >Read now</button>
+                </div>`
+            </div>
+            <div class="card">
+                <img src="cards/d2.jpg" alt="The Mother I Never Knew">
+                <div class="card-details">
+                    <h3>12 years slave</h3>
+                    <p>solomon northup</p>
+                    <p class="price">₹ 554 <span>₹ 699</span> <span class="discount">(15% off)</span></p>
+                    <button onclick="add()">Read now</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="cards/d3.jpg" alt="Something Happened">
+                <div class="card-details">
+                    <h3>directing film techniques and aesthetics</h3>
+                    <p>michael rabiger</p>
+                    <p class="price">₹ 154 <span>₹ 199</span> <span class="discount">(15% off)</span></p>
+                    <button onclick="add()">Read now</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="cards/d4.jpg" alt="The Magic Drum and Other Favourite Stories">
+                <div class="card-details">
+                    <h3>stephen hawking black holes</h3>
+                    <p>A brief history of time</p>
+                    <p class="price">₹ 254 <span>₹ 375</span> <span class="discount">(15% off)</span></p>
+                    <button onclick="add()">Read now</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="cards/d5.jpg" alt="The Magic of the Lost Temple">
+                <div class="card-details">
+                    <h3>the psychology of money</h3>
+                    <p>morgan housel</p>
+                    <p class="price">₹ 234 <span>₹ 275</span> <span class="discount">(15% off)</span></p>
+                    <button onclick="add()">Read now</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="cards/d6.jpg" alt="The Bird with Golden Wings">
+                <div class="card-details">
+                    <h3>mans search for meaning</h3>
+                    <p>viktor e.frankl</p>
+                    <p class="price">₹ 269 <span>₹ 299</span> <span class="discount">(15% off)</span></p>
+                    <button onclick="add()">Read now</button>
+                </div>
+            </div>
+        </div>
+    
+            <!--Comics and Manga-->
+            <h3 class="sudha" id="c5">Comics and Manga</h3>
+            <div class="card-container">
+                <div class="card">
+                    <img src="cards/m4.jpg" alt="Grandma's Bag of Stories">
+                    <div class="card-details">
+                        <h3>mahabharata</h3>
+                        <p>vyasa</p>
+                        <p class="price">₹ 239 <span>₹ 309</span> <span class="discount">(15% off)</span></p>
+                        <button onclick="book5()"  >Read now</button>
+                    </div>`
+                </div>
+                <div class="card">
+                    <img src="cards/m2.jpg" alt="The Mother I Never Knew">
+                    <div class="card-details">
+                        <h3>avengers verseus thanos</h3>
+                        <p>marvel</p>
+                        <p class="price">₹ 154 <span>₹ 299</span> <span class="discount">(15% off)</span></p>
+                        <button onclick="add()">Read now</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="cards/m3.jpg" alt="Something Happened">
+                    <div class="card-details">
+                        <h3>chacha chaudhary temple thief</h3>
+                        <p>michael rabiger</p>
+                        <p class="price">₹ 354 <span>₹ 499</span> <span class="discount">(15% off)</span></p>
+                        <button onclick="add()">Read now</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="cards/m1.jpg" alt="The Magic Drum and Other Favourite Stories">
+                    <div class="card-details">
+                        <h3>captain marvel</h3>
+                        <p>lopez</p>
+                        <p class="price">₹ 134 <span>₹ 175</span> <span class="discount">(15% off)</span></p>
+                        <button onclick="add()">Read now</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="cards/m5.png" alt="The Magic of the Lost Temple">
+                    <div class="card-details">
+                        <h3>avatar</h3>
+                        <p>nickelodeon</p>
+                        <p class="price">₹ 534 <span>₹ 675</span> <span class="discount">(15% off)</span></p>
+                        <button onclick="add()">Read now</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="cards/m6.png" alt="The Bird with Golden Wings">
+                    <div class="card-details">
+                        <h3>solo leveling 1</h3>
+                        <p>dubu</p>
+                        <p class="price">₹ 269 <span>₹ 399</span> <span class="discount">(15% off)</span></p>
+                        <button onclick="add()">Read now</button>
+                    </div>
+                </div>
+            </div>
+    
+     <!--Fantasy, Horror and Science Fiction-->
+     <h3 class="sudha" id="c6">Fantasy, Horror and Science Fiction</h3>
+     <div class="card-container">
+         <div class="card">
+             <img src="cards/f3.jpg" alt="Before The Coffee Gets Cold">
+             <div class="card-details">
+                 <h3>the metamorphosis</h3>
+                 <p>franz kafka</p>
+                 <p class="price">₹ 139 <span>₹ 209</span> <span class="discount">(15% off)</span></p>
+                 <button onclick="book6()">Read now</button>
+             </div>
+         </div>
+         <div class="card">
+             <img src="cards/f2.jpg" alt="Days at the Morisaki Bookshop">
+             <div class="card-details">
+                 <h3>mahabharata</h3>
+                 <p>vyasa</p>
+                 <p class="price">₹ 254 <span>₹ 359</span> <span class="discount">(15% off)</span></p>
+                 <button onclick="add()">Read now</button>
+             </div>
+         </div>
+         <div class="card">
+             <img src="cards/f1.jpg" alt="Something Happened">
+             <div class="card-details">
+                 <h3>the alchemist/h3>
+                 <p>raulo coelho</p>
+                 <p class="price">₹ 124 <span>₹ 159</span> <span class="discount">(15% off)</span></p>
+                 <button onclick="add()">Read now</button>
+             </div>
+         </div>
+         <div class="card">
+             <img src="cards/f4.jpg" alt="The Magic Drum and Other Favourite Stories">
+             <div class="card-details">
+                 <h3>1984</h3>
+                 <p>george orewell</p>
+                 <p class="price">₹ 234 <span>₹ 305</span> <span class="discount">(15% off)</span></p>
+                 <button onclick="add()">Read now</button>
+             </div>
+         </div>
+         <div class="card">
+             <img src="cards/f5.png" alt="The Magic of the Lost Temple">
+             <div class="card-details">
+                 <h3>the lost metal</h3>
+                 <p>brandon sandrerson</p>
+                 <p class="price">₹ 304 <span>₹ 355</span> <span class="discount">(15% off)</span></p>
+                 <button onclick="add()">Read now</button>
+             </div>
+         </div>
+         <div class="card">
+             <img src="cards/f6.png" alt="The Bird with Golden Wings">
+             <div class="card-details">
+                 <h3>the book thief</h3>
+                 <p>markus zusak</p>
+                 <p class="price">₹ 229 <span>₹ 259</span> <span class="discount">(15% off)</span></p>
+                 <button onclick="add()">Read now</button>
+             </div>
+         </div>
+     </div>
+
+
+     <!--New & Noteworthy-->
+     <h3 class="sudha">New & Noteworthy</h3>
+     <ul class="newnote">
+        <li>Fiction</li>
+        <li>Non Fiction</li>
+        <li>Business & Management</li>
+        <li>Kids</li>
+        <li>Young Adult</li>
+     </ul>
+     <div class="card-container">
+         <div class="card">
+             <img src="cards/n1.jpg" alt="Before The Coffee Gets Cold">
+             <div class="card-details">
+                 <h3>there are rivers in the sky</h3>
+                 <p>elif shafak</p>
+                 <p class="price">₹ 219 <span>₹ 259</span> <span class="discount">(15% off)</span></p>
+                 <button onclick="add()">Read now</button>
+             </div>
+         </div>
+         <div class="card">
+             <img src="cards/n2.jpg" alt="Days at the Morisaki Bookshop">
+             <div class="card-details">
+                 <h3>the lion women of tehran</h3>
+                 <p>marjan kamali</p>
+                 <p class="price">₹ 274 <span>₹ 329</span> <span class="discount">(15% off)</span></p>
+                 <button onclick="add()">Read now</button>
+             </div>
+         </div>
+         <div class="card">
+             <img src="cards/n3.jpg" alt="Something Happened">
+             <div class="card-details">
+                 <h3>the girl with the seven lives</h3>
+                 <p>vikas swarup</p>
+                 <p class="price">₹ 224 <span>₹ 259</span> <span class="discount">(15% off)</span></p>
+                 <button onclick="add()">Read now</button>
+             </div>
+         </div>
+         <div class="card">
+             <img src="cards/n4.jpg" alt="The Magic Drum and Other Favourite Stories">
+             <div class="card-details">
+                 <h3>the fiance dilemma</h3>
+                 <p>elena armas</p>
+                 <p class="price">₹ 234 <span>₹ 295</span> <span class="discount">(15% off)</span></p>
+                 <button onclick="add()">Read now</button>
+             </div>
+         </div>
+         <div class="card">
+             <img src="cards/n5.webp" alt="The Magic of the Lost Temple">
+             <div class="card-details">
+                 <h3>the story collector</h3>
+                 <p>evie woods</p>
+                 <p class="price">₹ 254 <span>₹ 295</span> <span class="discount">(15% off)</span></p>
+                 <button onclick="add()">Read now</button>
+             </div>
+         </div>
+         <div class="card">
+             <img src="cards/n6.webp" alt="The Bird with Golden Wings">
+             <div class="card-details">
+                 <h3>do not ask the river her name</h3>
+                 <p>sheela tomy</p>
+                 <p class="price">₹ 269 <span>₹ 299</span> <span class="discount">(15% off)</span></p>
+                 <button onclick="add()">Read now</button>
+             </div>
+         </div>
+     </div>
+
+
+        <!--book of the month-->
+        <div class="card-container">
+            <div class="card book">
+                <div class="txt">
+                    <h1>Book of the Month</h1>
+                <p>August 2024</p>
+                <span>Shop now</span>
+                </div>
+            </div>
+            <div class="card">
+                <img src="cards/b1.jpg" alt="Days at the Morisaki Bookshop">
+                <div class="card-details">
+                    <h3>the life impossible</h3>
+                    <p>matt haig</p>
+                    <p class="price">₹ 254 <span>₹ 299</span> <span class="discount">(15% off)</span></p>
+                    <button onclick="add()">Read now</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="cards/b2.jpg" alt="Something Happened">
+                <div class="card-details">
+                    <h3>the golden road</h3>
+                    <p>william dalrymple</p>
+                    <p class="price">₹ 294 <span>₹ 359</span> <span class="discount">(15% off)</span></p>
+                    <button onclick="add()">Read now</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="cards/b3.jpg" alt="The Magic Drum and Other Favourite Stories">
+                <div class="card-details">
+                    <h3>diary of a wimpy kid hot mess</h3>
+                    <p>jeff kinney</p>
+                    <p class="price">₹ 234 <span>₹ 295</span> <span class="discount">(15% off)</span></p>
+                    <button onclick="add()">Read now</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="cards/b4.jpg" alt="The Magic of the Lost Temple">
+                <div class="card-details">
+                    <h3>before we gorget kindness</h3>
+                    <p>toshikazu kawaguchi</p>
+                    <p class="price">₹ 254 <span>₹ 315</span> <span class="discount">(15% off)</span></p>
+                    <button onclick="add()">Read now</button>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!--best sellers-->
+        <hr>
+    <div class="contactabout">
+        <div class="icon">
+            <img src="images/logo1.png" alt="" srcset="">
+        </div>
+        <div class="ca">
+            <a class="but" href="aboutus.html">About us</a>
+            <a class="but" href="contact.html">Contact us</a>
+        </div>
+    </div>
+    <hr>
+
+    <!--feature authors-->
+    <h3 class="sudha">Featured Authors</h3>
+    <ul class="authors">
+        <li><img src="cards/pr1.jpg" alt=""><p>J.K.Rowling</p></li>
+        <li><img src="cards/pr2_files/220px-George_R._R._Martin_by_Gage_Skidmore_2.jpg" alt=""> <p>George R. R. Martin</p></li>
+        <li><img src="cards/pr7.jpeg" alt=""><p>Harper Lee</p></li>
+        <li><img src="cards/pr4.jpg" alt=""><p>Sudha Murthy</p></li>
+        <li><img src="cards/pr5.jpg" alt=""><p>Suzanne Collins</p></li>
+        <li><img src="cards/pr6.jpeg" alt=""><p>Mark Twain</p></li>
+    </ul>
+
+
+
+
+    <footer class="footer">
+        <div class="newsletter-section">
+            <div class="email">
+                <h2>Stay In The Know</h2>
+                <p>Subscribe to our newsletter and stay updated on latest offers, discounts and events near you.</p>
+                <form class="newsletter-form">
+                <input class="submit-email" type="email" placeholder="Email id">
+                <button type="submit">→</button>
+                </form>
+            </div>
+            <div class="social-media">
+                <h2>Follow us</h2>
+                <div class="social-icons">
+                    <i class="social fa-brands fa-twitter fa-xl"></i>
+                    <i class="social fa-brands fa-instagram fa-xl"></i>
+                    <i class="social fa-brands fa-facebook fa-xl"></i>
+                    <i class="social fa-solid fa-envelope fa-xl"></i>
+                </div>
+            </div>
+        </div>
+        <hr>
+     
+
+        <div class="footer-content">
+            <div class="company-info">
+                <img src="images/logo1.png" alt="">
+                <p>Bookstores draws book lovers of all ages into a community where they can discover great books, engage with booklovers and meet their favourite literary personalities.</p>
+                <div class="contact-info">
+                    <p><a href="#">estore@bookstore.in</a></p>
+                    <p>📞 +91 6451446544</p>
+                </div>
+            </div> 
+            <div class="footer-links">
+                <div class="category-section">
+                    <h3>Category</h3>
+                    <ul>
+                        <li><a href="#">New & Noteworthy</a></li>
+                        <li><a href="#">Top 50</a></li>
+                        <li><a href="#">Recommends</a></li>
+                        <li><a href="#">Books</a></li>
+                        <li><a href="#">Kids Books</a></li>
+                        <li><a href="#">Toys & Games</a></li>
+                        <li><a href="#">Stationery & Gifts</a></li>
+                        <li><a href="#">Gift Card</a></li>
+                        <li><a href="#">The Write Place</a></li>
+                    </ul>
+                </div>
+
+                <div class="help-section">
+                    <h3>Help</h3>
+                    <ul>
+                        <li><a href="#">Shipping & Delivery</a></li>
+                        <li><a href="#">Returns & Refunds</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="about-us">
+                    <h3>About Us</h3>
+                    <ul>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Our Stores</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="useful-links">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Get In Touch</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Payment Option</a></li>
+                        <li><a href="#">Returns Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+            <div class="copy-right">
+                <p>© 2024 Bookstore. All Rights Reserved</p>
+            </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
