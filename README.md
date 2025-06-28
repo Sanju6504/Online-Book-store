@@ -19,7 +19,9 @@ This is a Book Store web application developed as part of a project. The applica
 
 _Add screenshots of the main pages here (Home, Book List, Cart, Admin Panel, etc.)_
 
-## Project Structure
+## 📁 Project Structure
+
+```plaintext
 book-store/
 │
 ├── frontend/
@@ -37,7 +39,6 @@ book-store/
 │
 ├── README.md
 └── package.json / requirements.txt
-
 
 
 ## 🔧 Installation & Setup
